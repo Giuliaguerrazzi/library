@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Library</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class='container'>
+        <nav >
+            <div class='logo'>
+                <img src="./img/logo-book.jpg" alt="">
+            </div>
+
+            <div class='animation'>
+                <p>Read</p>
+                <div class="scroller">
+                    <div class="inner">
+                         <span>novel</span>
+                         <span>thriller</span>
+                         <span>pink fiction</span>
+                         <span>fantasy</span>
+                         
+                    </div>
+                 </div>
+            </div>
+           
+            
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn menu">MENU'</button>
+                <div id="dropdown-menu" class="dropdown-content">
+                    <li> 
+                        <a href="#libro-mese">Libro del mese</a> 
+                    </li>
+                    <li>
+                        <a href="#philosophy">La nostra filosofia</a>
+                    </li>
+                    <li>
+                        <a href="#list">Lista libri</a>
+                    </li>
+                    <li>
+                        <a href="#catalogue">Scegli e ordina</a>
+                    </li>
+                    <li>
+                        <a href="#contactUs">Contattaci</a>
+                    </li>
+                </div>
+              </div>
+
+          
+        </nav>
+    </div>
+              
+    <section class='hero'>
+        <h3>Scegli qui il tuo prossimo libro</h3>
+    </section>
+
+
+    <!-- Jumbotron -->
+    <section class='section-jumbotron'>
+      <div class="jumbotron container" id='libro-mese'>
+          <h3>Libro del mese</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="./img/cover1.jpg" alt="">
+                <img src="./img/cover1.jpg" alt="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Trama</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dolorum facilis? Reprehenderit laboriosam unde ducimus doloremque saepe delectus, dolorum alias. Quia consectetur nostrum corporis cum, dolor nihil iure laudantium voluptatibus.</p>
+                
+                </div>
+            </div>
+        </div>
+          
+      </div>
+        
+    </section>
+
+    <!-- row buttons -->
+    <section class='row'>
+        <div class="buttons">
+           <div class='btn'>
+               <div class='side default-side'>
+                   <p>E-book</p>
+                </div>
+               <div class='side hover-side'> 
+                   <p>Read more</p>
+                </div>
+           </div>
+
+           <div class='btn'>
+                <div class='side default-side'>
+                    <p>Libri scontati</p>
+                </div>
+                <div class='side hover-side'> 
+                    <p>Read more</p>
+                </div>
+            </div>
+         
+
+            <div class='btn'>
+                <div class='side default-side'>
+                    <p>Classifica libri</p>
+                </div>
+                <div class='side hover-side'>
+                    <p>Read more</p>
+                </div>
+            </div>
+
+            <div class='btn'>
+                <div class='side default-side'>
+                    <p>Gift-card</p>
+                </div>
+                <div class='side hover-side'>
+                    <p>Read more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- library -->
+    <section id='philosophy' class='library'>
+        
+        <video class='video-container' muted autoplay loop> 
+            <h1>video</h1>
+            <source src='Video Inside A Library.mp4' type='video/mp4'>
+        </video>
+
+        <p>
+           <em>Chi non legge, a 70 anni avrà vissuto una sola vita: la propria! Chi legge avrà vissuto 5000 anni: c’era quando Caino uccise Abele, quando Renzo sposò Lucia, quando Leopardi ammirava l’infinito… perché la lettura è una immortalità all’indietro</em> <br>
+            (<strong>Umberto Eco</strong> )
+        </p>
+
+    </section>
+
+    <!-- questions -->
+    <div class="section-center">
+        <h2>Domande&risposte</h2>
+
+        <article class='question'>
+
+            <div class="question-title">
+                <p>Quanto tempo ci vuole per la spedizione?</p>
+                <button type='button' class='question-btn'>
+                    <span class='plus-icon'>
+                        <i class='far fa-plus-square'></i>
+                    </span>
+                    <span class='minus-icon'>
+                        <i class='far fa-minus-square'></i>
+                    </span>
+                </button>
+            </div>
+           
+            <div class='question-text'>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ad animi accusantium consectetur maiores porro doloribus quaerat quasi eum perferendis veritatis dolorum, voluptatibus inventore itaque autem fuga quam hic. Facilis?</p>
+            </div>
+
+        </article>
+
+        <article class='question'>
+
+            <div class="question-title">
+                <p>Quanto costano le spese di spedizione?</p>
+                <button type='button' class='question-btn'>
+                    <span class='plus-icon'>
+                        <i class='far fa-plus-square'></i>
+                    </span>
+                    <span class='minus-icon'>
+                        <i class='far fa-minus-square'></i>
+                    </span>
+                </button>
+            </div>
+           
+            <div class='question-text'>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ad animi accusantium consectetur maiores porro doloribus quaerat quasi eum perferendis veritatis dolorum, voluptatibus inventore itaque autem fuga quam hic. Facilis?</p>
+            </div>
+
+        </article>
+
+        <article class='question'>
+
+            <div class="question-title">
+                <p>Come posso fare la tessera fedeltà?</p>
+                <button type='button' class='question-btn'>
+                    <span class='plus-icon'>
+                        <i class='far fa-plus-square'></i>
+                    </span>
+                    <span class='minus-icon'>
+                        <i class='far fa-minus-square'></i>
+                    </span>
+                </button>
+            </div>
+           
+            <div class='question-text'>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ad animi accusantium consectetur maiores porro doloribus quaerat quasi eum perferendis veritatis dolorum, voluptatibus inventore itaque autem fuga quam hic. Facilis?</p>
+            </div>
+
+        </article>
+    </div>
+
+    <!-- books list -->
+    <section id='list' class='books-list'>
+        <h3>Lista libri</h3>
+        <ul>
+            <li class='book'>
+                <img id='slider' src="./img/cover1.jpg" alt="">
+                <h4 id="author">La donna dei miei sogni</h4>
+                <p id="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                  Iste, doloremque nihil?
+                </p>
+                <p>€ 15 </p>
+                
+                <h5>Scegli un libro per me</h5>
+                <button class="random-btn">surprise me</button>
+            </li>
+
+            <a class='next' onclick="avanti();">&#10095;</a>
+            <a class='prev' onclick="indietro();">&#10094;</a>
+            
+        
+        </ul>
+    </section>
+
+
+    <!-- catalogue -->
+    <section id='catalogue'>
+        <h2>Cosa vuoi leggere?</h2>
+        <div class="container catalogue">
+            <div class='box-left bg-blue'>
+               <h3>Narrativa</h3>
+               <p>Scegli e ordina&gt; </p>
+               <img src="./img/cover4.jpg" alt="">
+            </div>
+
+            <div class="box-right bg-orange ">
+                <h3>Gialli</h3>
+                <p>Scegli e ordina&gt; </p>
+                <img src="./img/cover6.jpg" alt="">
+            </div>
+
+            <div class='box-left bg-orange '>
+                <h3>Saggistica</h3>
+                <p>Scegli e ordina&gt; </p>
+                <img src="./img/cover8.jpg" alt="">
+            </div>
+
+            <div class="box-right bg-blue">
+                <h3>Fantasy</h3>
+                <p>Scegli e ordina&gt; </p>
+                <img src="./img/cover9.jpg" alt="">
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- contact -->
+    <section id='contactUs' class='contact'>
+
+        <h3>Contact Us</h3>
+      
+        <form action="">
+            <input class='email' type="email" name="email" Placeholder="Email">
+            <textarea placeholder="Your Message"></textarea>
+            <input class='button-form' type="submit" value="Submit">
+
+            <img src="./img/book5.png" alt="">
+        </form>
+
+       
+      
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class='container footer-container'>
+            <ul>
+                <li>
+                   <img src="./img/logo-book.jpg" alt="">
+                   <p>Via XX settembre</p>
+                   <p>book@mail.com</p>
+                   <p>P. IVA 145879654879</p>
+                </li>
+            </ul>
+    
+            <ul>
+                <li><h4>Azienda</h4></li>
+                <li>
+                    La nostra azienda
+                </li>
+                <li>
+                    I nostri servizi
+                </li>
+                <li>
+                    Negozi
+                </li>
+                <li>
+                    Eventi
+                </li>
+            </ul>
+    
+            <ul>
+                <li><h4> Area Clienti</h4></li>
+        
+                <li>
+                    Contatti
+                </li>
+                <li>
+                    Condizioni di vendita
+                </li>
+                <li>
+                    Ordini
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
