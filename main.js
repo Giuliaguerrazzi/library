@@ -23,63 +23,63 @@ const reviews = [
     name: "La donna dei miei sogni",
     img: './img/cover1.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Un incontro fugace in un caffè. Un biglietto con un nome e un numero, ma non del tutto leggibile. Ventiquattr'ore per trovare l'amore. Nicholas Barreau ci regala la storia più romantica dell'anno: una caccia al tesoro negli angoli più segreti di Parigi.",
   },
   {
     id: 2,
     name: "Le balene mangiano da sole",
     img: './img/cover2.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Napoletano ventitreenne trapiantato a Milano, Gennaro Di Nola, detto Genny, di professione rider, ha l'abitudine di fare un gioco: indovinare il tipo di persona che gli aprirà la porta in base al cibo che ha ordinato. Quei pochi secondi in cui sbircia nella vita degli altri, fermo sulla soglia della loro casa, sono per lui una tentazione irresistibile, ed è difficile che sbagli a tracciare un profilo.",
   },
   {
     id: 3,
     name: "Il monaco",
     img: './img/cover3.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Il monaco è Ambrosio, in odore di santità, ammirato da tutta Madrid per le sue parole trascinanti. Il tentatore è Matilde, la donna demoniaca travestita da novizio, la splendida maga perversa. Negli anni '30 Antonin Artaud fece del romanzo gotico di Lewis una sorta di copia francese",
   },
   {
     id: 4,
     name: "Flush",
     img: './img/cover4.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Cresciuta in compagnia di uno scoiattolo, una marmotta e un topo di nome Jacobi, Woolf dedicò il suo primo saggio alla morte del cane di famiglia. Infatti, mentre stava leggendo le lettere d'amore di Elizabeth Barrett e Robert Browning, rimase estremamente colpita dalla figura del loro cane. Flush fu il compagno fedele della Barrett mentre era confinata nel suo letto di malattia a Londra, e al suo cocker venne dedicata anche una poesia",
   },
   {
     id: 5,
     name: "Le assaggiatrici",
     img: './img/cover5.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Con una rara capacità di dare conto alle ambiguità dell'animo umano, Rosella Postorino, ispirandosi alla storia vera di Margot Wölk (assaggiatrice di Hitler nella caserma di Krausendorf) racconta la vicenda eccezionale di una donna in trappola, fragile di fronte alla violenza della storia, forte dei desideri della giovinezza",
   },
   {
     id: 6,
     name: "Lungo petalo di mare",
     img: './img/cover6.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Nell'agosto 1939 Pablo Neruda organizzò quello che poi ha definito il suo poema più bello: il Winnipeg, una nave che ha portato in Cile 2200 rifugiati spagnoli che fuggivano dalle rappresaglie franchiste. A settant'anni dall'approdo a Santiago del Cile del Winnipeg, la nave equipaggiata da Neruda per mettere in salvo più di duemila esuli della Guerra civile spagnola.",
   },
   {
     id: 7,
     name: "L'isola dell'abbandono",
     img: './img/cover7.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Pare che l'espressione piantare in asso si debba a Teseo che, uscito dal labirinto grazie all'aiuto di Arianna, anziché riportarla con sé da Creta ad Atene, la lascia sull'isola di Naxos. In Naxos: in asso, appunto. Proprio su quell'isola, l'inquieta e misteriosa protagonista di questo romanzo sente l'urgenza di tornare.",
   },
   {
     id: 8,
     name: "Venezia è un pesce",
     img: './img/cover8.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Un grande classico per smarrirsi e bighellonare nel labirinto della città lagunare. A vent'anni dalla prima edizione si rinnova, perché nuovi tragitti dei sensi sono divenuti possibili.",
   },
   {
     id: 9,
     name: "La mennulara",
     img: './img/cover9.jpg',
     text:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust asperiores debitis incidunt, eius earum ipsam cupiditate libero Iste, doloremque nihil?",
+      "Una grande storia siciliana oggi ancora più ricca di fascino e dettagli: una gioia per i lettori che hanno amato La Mennulara – oltre un milione di copie vendute, tradotto in tutto il mondo –, un’occasione per i lettori che ancora non hanno incontrato questo classico contemporaneo.",
   },
 ];
 
@@ -104,8 +104,8 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 // show person based on item
-function showPerson(person) {
-  const item = reviews[person];
+function show(book) {
+  const item = reviews[book];
   img.src = item.img;
   author.textContent = item.name;
   info.textContent = item.text;
@@ -116,7 +116,7 @@ nextBtn.addEventListener("click", function () {
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
   }
-  showPerson(currentItem);
+  show(currentItem);
 });
 // show prev person
 prevBtn.addEventListener("click", function () {
@@ -124,14 +124,14 @@ prevBtn.addEventListener("click", function () {
   if (currentItem < 0) {
     currentItem = reviews.length - 1;
   }
-  showPerson(currentItem);
+  show(currentItem);
 });
 // show random person
 randomBtn.addEventListener("click", function () {
   console.log("hello");
 
   currentItem = Math.floor(Math.random() * reviews.length);
-  showPerson(currentItem);
+  show(currentItem);
 });
 
 // questions

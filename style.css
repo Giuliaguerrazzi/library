@@ -353,11 +353,13 @@ nav {
     color: #fff;
     bottom: 5%;
     left: 480px;
-    width: 350px;
+    width: 469px;
     line-height: 33px;
     border-radius: 15px;
-    
+    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
+    font-size: 16px;
+    padding: 15px;
 }
 
 .library .video-container {
@@ -424,6 +426,7 @@ nav {
     background-color: #03045e;
     display: flex;
     flex-direction: column;
+    height: 700px;
 }
 
 .books-list h3 {
@@ -457,11 +460,11 @@ nav {
 }
 
 .books-list ul .prev {
-    left: 400px;
+    left: 320px;
 }
 
 .books-list ul .next {
-    right: 400px;
+    right: 340px;
 }
 
 .books-list ul .prev:hover, 
@@ -476,9 +479,7 @@ nav {
 
 .books-list ul li {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     list-style: none;
     margin-right: 10px;
     margin-bottom: 15px;
@@ -488,17 +489,26 @@ nav {
     width: 20%;
 }
 
-.books-list ul li h4 {
-    margin-top: 20px;
+.books-list ul li .info-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
 }
 
-.books-list ul li p {
+.books-list ul li .info-book p {
     text-align: center;
-    margin-top: 15px;
+    margin: 20px;
     width: 300px;
 }
 
-.books-list ul li .random-btn {
+.books-list ul .choose-book {
+   position: absolute;
+   right: 45%;
+   margin-top: 30px;
+}
+
+.books-list ul .choose-book .random-btn {
     margin-top: 20px;
     background-color: #ffa62b;
     color: #03045e;
@@ -509,15 +519,16 @@ nav {
     cursor: pointer;
 }
 
-.books-list ul li .random-btn:hover {
+.books-list ul .choose-book .random-btn:hover {
     background-color: #03045e;
     color: #ffa62b;
     border: 1px solid #ffa62b;
 }
 
-.books-list ul li h5 {
+.books-list ul .choose-book .info-book h5 {
     margin-top: 25px;
 }
+
 
 /* catalogue */
 .catalogue {
@@ -626,7 +637,7 @@ nav {
 .contact img {
     position:absolute;
     top: 40px;
-    width: 33%;
+    width: 28%;
 }
 
 .contact img:hover {
